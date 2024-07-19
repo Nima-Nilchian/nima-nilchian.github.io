@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://Nima-Nilchian.github.io/sitemap.xml
+Sitemap: https://Nima-Nilchian.github.io/al-folio/sitemap.xml
