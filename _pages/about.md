@@ -2,24 +2,24 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+# subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: prof_pic2.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Tehran, Iran</p>
 
-news: true # includes a list of news items
+news: false # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I'm Nima, a Bachelor student in Computer Engineering at the University of Kharazmi with deep passion for Natural Language Processing and Machine Learning. I'm mainly interested in developing highly skilled AI systems that can contribute to social good, and Information Retrieval, specifically Retrieval-Augmented Generation (RAG) and Knowledge Graphs.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I've been working as an NLP Engineer at Farzan Institute, with a particular focus on creating chatbots and agentic workflows in the Mental Health domain.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+My Research experience at Farzan Clinical Research Institute has allowed me to work on some really cool projects, like evaluating LLM's in different Medical tasks, like Multiple-Choice Questions, Case-Diagnosis, and Ethics and Biases of LLM's in Medical decision makings. I'm currently working on an RCT project.
+
+ I’ve also taken on leadership roles, like being the President of the Student Scientific Association at my university and running Pointer Magazine. These experiences have helped me build strong teamwork and communication skills. My goal is to keep exploring how AI can make life better and work on projects that have a positive impact on people’s lives.
