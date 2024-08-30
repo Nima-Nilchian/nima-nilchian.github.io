@@ -1,81 +1,40 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
-importance: 2
+title: Web Information Retrieval (3)
+description: third project of the Modern Information Retrieval course
+img: assets/img/projects/web_ir.jpg
+importance: 1
 category: work
 giscus_comments: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+This project had several tasks, 1 - Crawling webpages 2 - Personalized PageRank 3 - Link Analysis the results with HITS algorithm 4 - Recommender System 5 - Evaluating the recommender system.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+1- Crawling the Web:
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+The first task is to scrape the semanticscholar.org webpage for crawling papers. we start with 5 paper of 5 professor and continue with top 10 cited papers of each paper and continue until reaching 2000 paper, then store it in a json.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+2 - Personalized PageRank:
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+In this part of the project, I implemented a personalized PageRank algorithm, an enhancement of the traditional PageRank, which considers user preferences to rank nodes in a graph based on their relevance to a specific user rather than their general importance. The personalized PageRank algorithm was applied to identify key papers that are most relevant to a particular professor's area of expertise. By inputting a specific field of interest, the algorithm analyzes the citation graph to output the top-ranked papers that are most closely aligned with that field. 
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+3 - HITS Algorithm:
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+In this project, I focused on ranking authors based on the citation relationships between them. The core idea is to analyze how authors cite each other in academic papers. Specifically, when Author A cites a paper (P) co-authored by Author B, it is considered a citation from Author A to Author B. Using this citation relationship, I constructed a citation graph where nodes represent authors and directed edges represent citations between them. To rank the authors, I applied the HITS (Hyperlink-Induced Topic Search) algorithm, which utilizes the concepts of "hub" and "authority" scores. These scores reflect an author's influence as a source of information (hub) and as a cited authority in the academic community. The final output is a ranked list of authors based on their hub and authority scores within the citation network.
 
-{% raw %}
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+4 - Recommender System
 
-{% endraw %}
+In this section of the project, I focused on developing a recommender system that suggests newly published papers to users based on their past reading history or interests. The recommender system is designed to analyze a user's previously liked papers and recommend new ones that are likely to match their preferences. The dataset provided in `recommended_papers.json` contains a list of users, where each user's `positive_papers` field includes 50 papers they have shown interest in, and the `recommendedPapers` field contains 10 newly published papers that the user has liked, ranked by importance.
+
+The objective was to train the recommender system using this data. Users were split into training and testing groups. The model was trained on the training set using the `positive_papers` field to predict which new papers the users in the testing group would likely appreciate. During prediction, the `recommendedPapers` field for the test users was not used, ensuring that the recommendations were based purely on the learned preferences from the training data. The ultimate goal was to accurately forecast the new papers that the test users would find appealing, thereby evaluating the effectiveness of the recommender system.
+
+I implemented this with two different methods: 1 - Collaborative Filtering and 2 - Content-Based Filtering.
+
+1 - Collaborative Filtering:
+In the Collaborative Filtering approach, the system recommends articles to a user based on the preferences of other users with similar tastes
+
+2 - Content-Based Filtering:
+In the Content-Based Filtering approach, the system recommends new articles to a user based on the content of articles they have previously liked
+
+At the end I evaluated the performance of these recommender systems using the nDCG (normalized Discounted Cumulative Gain) metric.

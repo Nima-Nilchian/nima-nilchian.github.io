@@ -1,10 +1,10 @@
 ---
 layout: page
-title: project 4
-description: another without an image
+title: Traditional Information Retrieval (1)
+description: Second project of the Modern Information Retrieval course
 img:
-importance: 3
-category: fun
+importance: 1
+category: work
 ---
 
 Every project has a beautiful feature showcase page.
