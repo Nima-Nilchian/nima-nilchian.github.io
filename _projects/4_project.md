@@ -2,79 +2,86 @@
 layout: page
 title: Traditional Information Retrieval (1)
 description: Second project of the Modern Information Retrieval course
-img:
+img: assets/img/projects/IR.png
 importance: 1
 category: work
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+### **EDA of dataset:**
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+we start with first Preprocessing document, normalizing, removing stopwords by calculating top frequency words, stemming, Lemmatizing and Case folding.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+### **Positional Index:**
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+Constructing a positional index in trie format for searching the word and retrieving the posting list. Also making the index dynamic by adding and removing document.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+### **Index Storage and Compression:**
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+Enhancing the system by adding the capability to save and reload the index. The storage has been implemented using three different methods: no-compression, gamma-code, and variable-byte. These compression methods has been implemented manually and optimal.
 
-{% raw %}
+### **Spelling Correction:**
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+If the input query contains spelling errors or words not found in the dictionary, the query will be corrected before proceeding with the search. Starting by extracting bigrams from the word, then using the Jaccard index to find the 20 words with the most shared bigrams. Finally, by using the minimum edit distance the best replacement of word will be selected.
 
-{% endraw %}
+### **Document Search and Retrieval**
+
+Implementing a **document search and retrieval system** that processes **user queries** to search within the **titles** and **abstracts** of indexed documents. The system calculates a **final score** for each document by combining **weighted scores** from title and abstract searches, allowing customization through a **user-defined weight parameter**. Two **search methods** were implemented: a **vector space model** using **TF-IDF** (**ltn-lnn**, **ltc-lnc** and **lnc-ltn**) and a **probabilistic model** (**Okapi BM25**). The system returns documents ranked by their final scores.
+
+### **System Performance Evaluation**
+
+At the end the **performance** of a **document retrieval system** will be evaluated using a set of sample queries and their corresponding actual results provided in a validation file. Various **evaluation metrics** like **precision**, **recall**, **F1**, **MAP**, **NDCG** and **MRR** have been implemented from scratch and all the above search methods have been compared.
+
+the Evaluation statistics is as below:
+
+<table border="1" cellpadding="5" cellspacing="0">
+    <tr>
+        <th>Metric</th>
+        <th>ltn-lnn</th>
+        <th>ltc-lnc</th>
+        <th>lnc-ltn</th>
+        <th>Okapi BM25</th>
+    </tr>
+    <tr>
+        <td>Precision</td>
+        <td>0.58</td>
+        <td>0.63</td>
+        <td>0.67</td>
+        <td>0.62</td>
+    </tr>
+    <tr>
+        <td>Recall</td>
+        <td>0.70</td>
+        <td>0.63</td>
+        <td>0.67</td>
+        <td>0.62</td>
+    </tr>
+    <tr>
+        <td>F1 Score</td>
+        <td>0.64</td>
+        <td>0.63</td>
+        <td>0.67</td>
+        <td>0.62</td>
+    </tr>
+    <tr>
+        <td>MAP</td>
+        <td>0.72</td>
+        <td>0.77</td>
+        <td>0.85</td>
+        <td>0.76</td>
+    </tr>
+    <tr>
+        <td>NDCG</td>
+        <td>0.61</td>
+        <td>0.61</td>
+        <td>0.65</td>
+        <td>0.53</td>
+    </tr>
+    <tr>
+        <td>MRR</td>
+        <td>0.26</td>
+        <td>0.32</td>
+        <td>0.36</td>
+        <td>0.31</td>
+    </tr>
+</table>

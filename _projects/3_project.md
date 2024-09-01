@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Machine Learning and Deep Learning Approach To Information Retrieval (2)
+title: ML and DL Approach To Information Retrieval (2)
 description: Second project of the Modern Information Retrieval course
 img: assets/img/projects/nn.jpg
 importance: 1

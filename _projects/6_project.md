@@ -1,80 +1,20 @@
 ---
 layout: page
-title: project 6
-description: a project with no image
+title: Machine Learning Projects
+description: projects Done for Quera ML Bootcamp
 img:
-importance: 4
-category: fun
+importance: 3
+category: work
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+#### 1 - Caceli:
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+This project aimed to predict whether users would cancel their tickets using machine learning models. After preprocessing the data and performing feature engineering, two models were trained: a Decision Tree Classifier for basic predictions and an ensemble approach using AdaBoost and Random Forest to enhance accuracy. The models' performance was evaluated using F1 scores, classification reports, and confusion matrices, demonstrating the application of basic and ensemble machine learning models.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+#### 2 - Gender Detection:
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+The project aimed to predict the gender of Twitter and Instagram users based on the data provided. Preprocessing involved text normalization, tokenization, and removing stopwords using tools like Hazm and NLTK. The cleaned text data was then vectorized using a CountVectorizer. For modeling, a Multinomial Naive Bayes classifier was trained on the processed data, with the dataset split into training and validation sets. The model's performance was evaluated using F1 scores and classification reports, highlighting its effectiveness in gender prediction.
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+#### 3 - Text Categorization:
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
+This project focused on developing a machine learning model to predict the categorical topic of a document based on text features like titles, descriptions, and full content. Preprocessing steps included text normalization, tokenization, and handling class imbalance using RandomOverSampler. The modeling process involved building a pipeline with a CountVectorizer, TfidfTransformer, and a Linear SVM classifier to classify the documents. The model's performance was evaluated using the weighted F1-score, emphasizing its ability to accurately classify documents into the correct categories.
