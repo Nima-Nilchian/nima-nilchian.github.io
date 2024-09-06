@@ -110,14 +110,6 @@
   ],
   "projects": [
     {
-      "name": "Binary Stress Detection",
-      "summary": "Fine-tuned, evaluated and compared LLMs for binary stress detection and stress category classification.",
-      "highlights": ["Stress-Detection", "Finetuning", "Language Models", "Mental-Health"],
-      "startDate": "2023-07",
-      "endDate": "2023-09",
-      "url": "https://github.com/Nima-Nilchian/stress-detection"
-    },
-    {
       "name": "Web Information Retrieval (3)",
       "summary": "Crawled and Scraped 2000 papers. \nLink Analysis using PageRank and HITS algorithms to determine the importance of papers. Personalized PageRank that considers users preferences. \nImplemented Personalized Search Engine and Recommender System for the system.",
       "highlights": ["Web-Crawling/Scraping", "Link Analysis", "Personalized Search Engine", "Recommender System"],
@@ -140,6 +132,14 @@
       "startDate": "2023-03",
       "endDate": "2023-03",
       "url": "https://github.com/Nima-Nilchian/Modern-Information-Retrieval/blob/master/ir-phase-1/ir-phase-1.ipynb"
+    },
+    {
+      "name": "Binary Stress Detection",
+      "summary": "Fine-tuned, evaluated and compared LLMs for binary stress detection and stress category classification.",
+      "highlights": ["Stress-Detection", "Finetuning", "Language Models", "Mental-Health"],
+      "startDate": "2023-07",
+      "endDate": "2023-09",
+      "url": "https://github.com/Nima-Nilchian/stress-detection"
     },
     {
       "name": "Username Generator",
