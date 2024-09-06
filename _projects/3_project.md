@@ -7,7 +7,7 @@ importance: 1
 category: work
 ---
 
-This project aims to practise retrieval systems based on machine learning using classification and clustering.
+This project aims to practise retrieval systems based on machine learning using classification and clustering. <br/>
 [Source Code](https://github.com/Nima-Nilchian/IR-Phase2)
 
 ### 1 - EDA of dataset:

@@ -7,7 +7,8 @@ importance: 1
 category: work
 related_publications: false
 ---
-The primary goal of this project was to Finetune LMs for 1- binary detection of stress 2- classify the category of stress and also 3- evaluating and comparing different models for stress detection. [Source Code](https://github.com/Nima-Nilchian/stress-detection)
+The primary goal of this project was to Finetune LMs for 1- binary detection of stress 2- classify the category of stress and also 3- evaluating and comparing different models for stress detection. <br/>
+[Source Code](https://github.com/Nima-Nilchian/stress-detection)
 
 the work was done with Dreaddit: A Reddit Dataset for Stress Analysis in Social Media. which is shown below:
 

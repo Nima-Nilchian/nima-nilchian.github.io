@@ -7,7 +7,8 @@ importance: 1
 category: work
 ---
 
-This project is the first phase of three phases of the Modern Information Retrieval Course by Prof. Mahdie Soleymani Baghshah from Sharif University of Technology.
+This project is the first phase of three phases of the Modern Information Retrieval Course by Prof. Mahdie Soleymani Baghshah from Sharif University of Technology. <br/>
+[Source Code](https://github.com/Nima-Nilchian/Modern-Information-Retrieval)
 
 ### EDA of dataset:
 

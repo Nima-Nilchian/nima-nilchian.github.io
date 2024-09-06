@@ -5,7 +5,7 @@ description: Implementing and evaluating various keyword extraction methods in P
 img: assets/img/projects/ke.jpg
 importance: 3
 category: work
-related_publications: true
+related_publications: false
 ---
 
 [Source Code](https://github.com/Nima-Nilchian/Keyword_extraction)

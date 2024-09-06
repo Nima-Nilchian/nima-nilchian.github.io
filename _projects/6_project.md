@@ -7,7 +7,8 @@ importance: 2
 category: work
 ---
 
-These projects are part of the projects of the Proffesional Project-Based Course in Machine Learning from quera. 
+These projects are part of the projects of the Proffesional Project-Based Course in Machine Learning from quera. <br/> 
+[Source Code](https://github.com/Nima-Nilchian/ML-Projects)
 
 #### 1 - **Caceli:**
 
