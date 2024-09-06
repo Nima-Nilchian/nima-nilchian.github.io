@@ -24,11 +24,7 @@ The goal of this project is to develop a model that can handle the transliterati
     - The primary task involves implementing and training a **Seq2Seq** (Sequence-to-Sequence) model (**LSTM** and **GRU**) from scratch using **PyTorch**. The model needs to be carefully tuned to prevent overfitting or underfitting.
 
 5. **Analysis of Results**:
-    - Post-training, the results will be analyzed, including evaluating the model using metrics like the Word Error Rate (WER). Visualizations of training and test losses will be provided to illustrate the model's performance.
+    - Post-training, the results will be analyzed, including evaluating the model using metrics like the **Word Error Rate (WER)**. Visualizations of training and test losses will be provided to illustrate the model's performance.
 
 6. **Evaluation Metrics**:
-    - The performance of the model will be evaluated using WER, with recommendations to use the "jiwer" library for accurate calculations and monitoring with Tensorboard.
-
-
-The project is an excellent opportunity to delve deep into the challenges of natural language processing, specifically in transliteration, and offers a practical application that can be extended to real-world scenarios.
-
+    - The performance of the model will be evaluated using WER, also using the **jiwer** library for accurate calculations and monitoring with **Tensorboard**.

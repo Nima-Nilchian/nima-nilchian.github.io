@@ -22,15 +22,13 @@
   },
   "interests": [
     {
-      "name": "Large Language Models",
+      "name": "Natural Language Processing",
       "icon": "fa-solid fa-tag",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "Large Language Models",
+        "Fine-tuning",
+        "Agents",
+        "Retrieval Augmented Generation"
       ]
     },
     {
@@ -44,10 +42,31 @@
       "name": "Information Retrieval",
       "icon": "fa-solid fa-tag",
       "keywords": [
-        "Search and ranking results",
-        "recommender systems"
+        "recommender systems",
+        "Search and ranking results"
+      ]
+    },
+    {
+      "name": "Knowledge Graphs",
+      "icon": "fa-solid fa-tag",
+      "keywords": [
+        "Neo4j",
+        "Graph RAG"
+      ]
+    },
+    {
+      "name": "Deep Learning",
+      "icon": "fa-solid fa-tag"
+    },
+    {
+      "name": "Health Informatics",
+      "icon": "fa-solid fa-tag",
+      "keywords": [
+        "Mental-Health"
+        
       ]
     }
+    
   ],
   "education": [
     {
@@ -55,11 +74,11 @@
       "location": "Tehran, Iran",
       "url": "https://www.khu.ac.ir/",
       "area": "Computer Engineering-Software Engineering",
+      "score": "17.75/20",
       "studyType": "Bachelor",
       "startDate": "Sep 2020",
       "endDate": "Jan 2025",
-      "score": "17.75/20 - 3.78/4",
-      "courses": ["AI", "Modern Information Retrieval"]
+      "courses": ["Artificial Intelligence", "Modern Information Retrieval"]
     }
   ],
   "work": [
@@ -94,35 +113,48 @@
       "name": "Binary Stress Detection",
       "summary": "Fine-tuned, evaluated and compared LLMs for binary stress detection and stress category classification.",
       "highlights": ["Stress-Detection", "Finetuning", "Language Models", "Mental-Health"],
-      "startDate": "Summer 2023",
+      "startDate": "2023-07",
+      "endDate": "2023-09",
       "url": "https://github.com/Nima-Nilchian/stress-detection"
     },
     {
       "name": "Web Information Retrieval (3)",
       "summary": "Crawled and Scraped 2000 papers. \nLink Analysis using PageRank and HITS algorithms to determine the importance of papers. Personalized PageRank that considers users preferences. \nImplemented Personalized Search Engine and Recommender System for the system.",
       "highlights": ["Web-Crawling/Scraping", "Link Analysis", "Personalized Search Engine", "Recommender System"],
-      "startDate": "Spring 2023",
+      "startDate": "2023-06",
+      "endDate": "2023-06",
       "url": "https://github.com/Nima-Nilchian/Web-IR/blob/master/ir_phase_3.ipynb"
     },
     {
       "name": "Machine Learning and Deep Learning Approach To Information Retrieval (2)",
       "summary": "Implemented and Evaluated Naive Bayes Classifier (from scratch) - Neural Network Model and Transformer Based Classifier to classify documents labels. \nClustering doucuments K-means and Hierarchical Clustering, visualizing and evaluating.",
       "highlights": ["Machine Learning", "Neural Network Models", "Clustering", "Visualization", "Evaluation"],
-      "startDate": "Spring 2023",
+      "startDate": "2023-05",
+      "endDate": "2023-05",
       "url": "https://github.com/Nima-Nilchian/IR-Phase2/blob/master/IR_Phase_2.ipynb"
     },
     {
       "name": "Traditional Information Retrieval (1)",
       "summary": "Positional Inverted Index for documents and Index Compression using Variable Byte Encoding.\nScoring Documents and Search system using BM25 and TF-IDF and Evaluating the system.",
       "highlights": ["Index Construction", "Index Compression", "Search System", "Evaluation"],
-      "startDate": "Winter 2023",
+      "startDate": "2023-03",
+      "endDate": "2023-03",
       "url": "https://github.com/Nima-Nilchian/Modern-Information-Retrieval/blob/master/ir-phase-1/ir-phase-1.ipynb"
     },
     {
       "name": "Username Generator",
       "summary": "Implemented Encoder-Decoder Sequence Models for translating English usernames to equivalent Persian names, using Deep Learning Models with Pytorch.",
       "highlights": ["Sequence Models", "LSTM", "Translation", "Pytorch"],
-      "startDate": "Summer 2022",
+      "startDate": "2022-08",
+      "endDate": "2023-09",
+      "url": "https://github.com/Nima-Nilchian/Username_Generator/blob/master/username_generator_GRU.ipynb"
+    },
+    {
+      "name": "Keyword Extraction",
+      "summary": "Implementing and evaluating various keyword extraction methods in Persian Language",
+      "highlights": ["TF-IDF", "PerKE", "YAKE", "EmbedRANK", "KeyBERT"],
+      "startDate": "2023-08",
+      "endDate": "2023-09",
       "url": "https://github.com/Nima-Nilchian/Username_Generator/blob/master/username_generator_GRU.ipynb"
     }
   ],
@@ -245,31 +277,6 @@
       "language": "Turkish",
       "fluency": "Basic",
       "icon": ""
-    }
-  ],
-
-  "volunteer": [
-    {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
-    }
-  ],
-  "references": [
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    },
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
     }
   ]
 }
