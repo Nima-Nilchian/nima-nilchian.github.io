@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Nima Nilchian",
-    "label": "ML Engineer",
+    "label": "AI Engineer",
     "image": "",
     "email": "Nima.nilchian@gmail.com",
     "phone": "+98 9057954594",
@@ -32,18 +32,12 @@
       ]
     },
     {
-      "name": "Machine Learning",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Applications in Healthcare"
-      ]
-    },
-    {
       "name": "Information Retrieval",
       "icon": "fa-solid fa-tag",
       "keywords": [
         "recommender systems",
-        "Search and ranking results"
+        "Search and ranking results",
+        "Elastic Search"
       ]
     },
     {
@@ -59,11 +53,10 @@
       "icon": "fa-solid fa-tag"
     },
     {
-      "name": "Health Informatics",
+      "name": "Digital Education",
       "icon": "fa-solid fa-tag",
       "keywords": [
-        "Mental-Health"
-        
+        "AI in Education"
       ]
     }
     
@@ -74,7 +67,7 @@
       "location": "Tehran, Iran",
       "url": "https://www.khu.ac.ir/",
       "area": "Computer Engineering-Software Engineering",
-      "score": "17.75/20",
+      "score": "17.78/20",
       "studyType": "Bachelor",
       "startDate": "Sep 2020",
       "endDate": "Jan 2025",
@@ -86,10 +79,19 @@
       "name": "Farzan Institute",
       "position": "NLP Engineer",
       "url": "https://www.farzaninstitute.com/",
-      "startDate": "Apr 2024",
-      "endDate": "Present",
+      "startDate": "Oct 2023",
+      "endDate": "Jan 2025",
       "summary": "Developing various applications and chatbots in Mental-Health domain utilizing LLM's.",
-      "highlights": ["LLM", "Rag", "Knowledge Graphs", "Multi-Agent", "Finetuning", "Dataset Generation"]
+      "highlights": ["LLM", "RAG", "Fine-tuning", "Dataset Generation", "Medical AI"]
+    },
+    {
+      "name": "Smilinno Innovation Hub",
+      "position": "AI Software Engineer",
+      "url": "https://www.smilinno.com/",
+      "startDate": "Feb 2025",
+      "endDate": "Present",
+      "summary": "Working on SaaS platform on building Agentic Chatbots",
+      "highlights": ["LLM", "Agentic RAG", "Knowledge Graphs", "Software Engineering"]
     }
   ],
   "publications": [
@@ -109,6 +111,14 @@
     }
   ],
   "projects": [
+    {
+      "name": "BandBooster",
+      "summary": "AI personal assistant for IELTS writing preparation, utilizing LLMs for personalized feedback, scoring, and improvement suggestions.",
+      "highlights": ["AI in Education", "Agentic flow", "IELTS writing", "Personalized feedback", "Scoring", "Improvement suggestions"],
+      "startDate": "2025-02",
+      "endDate": "2023-04",
+      "url": "https://bandbooster.liara.run"
+    },
     {
       "name": "Web Information Retrieval (3)",
       "summary": "Crawled and Scraped 2000 papers. \nLink Analysis using PageRank and HITS algorithms to determine the importance of papers. Personalized PageRank that considers users preferences. \nImplemented Personalized Search Engine and Recommender System for the system.",
@@ -221,10 +231,10 @@
       "level": "Expert",
       "icon": "fa-solid fa-hashtag",
       "keywords": [
-        "Pytorch",
-        "Huggingface",
+        "langgraph",
         "Langchain",
-        "Llama-Index",
+        "Huggingface",
+        "Pytorch",
         "tensorflow",
         "OpenCV"
       ]
@@ -234,19 +244,21 @@
       "level": "Expert",
       "icon": "fa-solid fa-hashtag",
       "keywords": [
-        "Django-Rest",
         "FastAPI",
+        "Django-Rest",
         "Flask"
       ]
     },
-    {
-      "name": "Tools",
+        {
+      "name": "Databases",
       "level": "Expert",
       "icon": "fa-solid fa-hashtag",
       "keywords": [
-        "Git/Github",
-        "Unix Shell",
-        "Anaconda"
+        "MongoDB",
+        "PostgreSQL",
+        "Elastic Search",
+        "ChromaDB",
+        "Redis"
       ]
     },
     {

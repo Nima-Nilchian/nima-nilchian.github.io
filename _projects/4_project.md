@@ -2,7 +2,7 @@
 layout: page
 title: Traditional Information Retrieval (1)
 description: Implementing a document search and retrieval system that ranks documents based on a combination of vector space and probabilistic models
-img: assets/img/projects/ir.png
+img: assets/img/projects/information_retrieval.jpg
 importance: 1
 category: work
 ---

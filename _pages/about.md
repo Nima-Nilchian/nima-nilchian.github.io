@@ -16,10 +16,8 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I'm Nima, a Bachelor student in Computer Engineering at the University of Kharazmi with deep passion for Natural Language Processing and Machine Learning. I'm mainly interested in developing highly skilled AI systems that can contribute to social good, and Information Retrieval, specifically Retrieval-Augmented Generation (RAG) and Knowledge Graphs.
+I'm Nima, a Computer Engineering graduate from the University of Kharazmi with a deep passion for AI, large language models (LLMs), and software engineering. I'm particularly interested in developing advanced AI systems that contribute to social good, especially in education and healthcare.
 
-I've been working as an NLP Engineer at Farzan Institute, with a particular focus on creating chatbots and agentic workflows in the Mental Health domain with LLMs.
+I’m currently an AI Software Engineer at Smilinno, contributing to the Hamhoush project, a SaaS platform for building customizable agentic chatbots. My work involves developing and optimizing a Retrieval-Augmented Generation (RAG) application with an emphasis on performance and reliability, improving system scalability through asynchronous processing, and leading backend development to seamlessly integrate advanced AI capabilities into production environments.
 
-My research experience at Farzan Clinical Research Institute has given me the opportunity to work on some exciting projects, such as evaluating LLMs in various medical tasks, including multiple-choice questions, case diagnosis, and the ethics and biases of LLMs in medical decision-making. I'm currently involved in an RCT project.
-
- I’ve also taken on leadership roles, like being the President of the Student Scientific Association at my university and running Pointer Magazine. These experiences have helped me build strong teamwork and communication skills. My goal is to keep exploring how AI can make life better and work on projects that have a positive impact on people’s lives.
+I’ve also taken on leadership roles, like being the President of the Student Scientific Association at my university and running Pointer Magazine. These experiences have helped me build strong teamwork and communication skills. My goal is to keep exploring how AI can make life better and work on projects that have a positive impact on people’s lives.
